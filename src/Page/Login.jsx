@@ -1,6 +1,9 @@
-import React from 'react'
+import {React,useState} from 'react'
+import Button from '../Component/Button'
 
 function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <>
       <div className="Container">
@@ -22,12 +25,15 @@ function Login() {
                 className="Password-input"
                 required
                 />
+                <span onClick={() => setShowPassword(!showPassword)}>
+                  {showPassword ? 'Hide' : 'Show'}
+                </span>
                 <label >
                   <input type="checkbox"/> Remember me
                 </label>  
                 <a href="#">Forgot your password?</a>
 
-                <button type="submit">Login</button>
+                <Button text="Login" />
                 <p>Don't have an account? <a href="#">Sign up</a></p>
               </div>
             </div>
