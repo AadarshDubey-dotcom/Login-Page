@@ -32,9 +32,16 @@ function Login() {
                   <input type="checkbox"/> Remember me
                 </label>  
                 <a href="#">Forgot your password?</a>
+                <p>--- Or Login With ---</p>
+                <button className="google-btn">Login with google</button>
+                <button className="Github-btn">Login with Github</button>
+                <button className="Linkdin-btn">Login with Linkdin</button>
 
                 <Button text="Login" />
                 <p>Don't have an account? <a href="#">Sign up</a></p>
+              </div>
+              <div className="IMG">
+                <img src='src/assets/headphone-with-blueberry-cartoon.svg' alt='Headphone Cartoon'/>
               </div>
             </div>
         </div>

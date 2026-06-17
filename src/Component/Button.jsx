@@ -1,11 +1,15 @@
 import React from 'react'
 
-function Button({text}) {
+function Button({text, onClick, type="button"}) {
   return (
     <>
-      <button onClick={() => alert('Button clicked!')}
-        className="my-button"
-        >{text}</button>
+      <button
+       type={type}
+       onClick={onClick}
+       className="my-button"
+      >
+        {text}
+      </button>
 
     </>
   )
