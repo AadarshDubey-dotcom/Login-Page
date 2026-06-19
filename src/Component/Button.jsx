@@ -8,7 +8,7 @@ function Button({text, onClick, type="button"}) {
        onClick={onClick}
        className="my-button"
       >
-        {text}
+        HELLO
       </button>
 
     </>

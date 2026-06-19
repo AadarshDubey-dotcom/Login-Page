@@ -1,0 +1,88 @@
+.Container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81A6C6;
+}
+
+.Login-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Form{
+    flex: 1;
+    text-align: left;
+    background-color: #AACDDC;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.Form h2 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D2C4B4;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.Input-field input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    background: #F3E3D0;
+    color: #fff;
+}
+
+.Input-field input::placeholder {
+    color: #D2C4B4;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+    color: #facc15;
+    font-size: 14px;
+}
+
+.Input-field a {
+    display: block;
+    margin: 10px 0;
+    color: #D2C4B4;
+    text-decoration: none;
+    text-align: center;
+}
+
+.Input-field a:hover {
+    text-decoration: underline;
+}
+
+
+.social-button {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.google-btn {  color: #000000; }
+.github-btn { background: #000; color: #fff; }
+.linkedin-btn { background: #0077b5; color: #fff; }
+
+p {
+    text-align: center;
+}
+
+.IMG {
+    flex: 1;
+    text-align: right;
+}

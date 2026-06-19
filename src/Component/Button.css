@@ -1,0 +1,22 @@
+.my-button {
+  background: #F3E3D0;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.my-button:hover {
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  transform: translateY(-2px); 
+}
+
+.my-button:active {
+  transform: scale(0.95);
+}

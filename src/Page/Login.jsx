@@ -1,4 +1,5 @@
 import {React,useState} from 'react'
+import "./Login.css"
 import Button from '../Component/Button'
 
 function Login() {
@@ -25,9 +26,6 @@ function Login() {
                 className="Password-input"
                 required
                 />
-                <span onClick={() => setShowPassword(!showPassword)}>
-                  {showPassword ? 'Hide' : 'Show'}
-                </span>
                 <label >
                   <input type="checkbox"/> Remember me
                 </label>  
@@ -40,10 +38,10 @@ function Login() {
                 <Button text="Login" />
                 <p>Don't have an account? <a href="#">Sign up</a></p>
               </div>
-              <div className="IMG">
+            </div>
+            <div className="IMG">
                 <img src='src/assets/headphone-with-blueberry-cartoon.svg' alt='Headphone Cartoon'/>
               </div>
-            </div>
         </div>
       </div>
     </>
