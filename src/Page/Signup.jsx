@@ -1,13 +1,15 @@
 import React from 'react'
 import Button from '../Component/Button'
+import SocialButton from '@/Component/SocialButton'
+import './Signup.css'
 
 function Signup() {
   return (
     <>
     <div className='signup-container'>
       <div className='signup-form'>
-        <h2>Create Account</h2>
         <form className="Signup-Form">
+          <h2>Create Account</h2>
         <input 
         type="text"
         placeholder='Full Name'
@@ -30,16 +32,12 @@ function Signup() {
         />
 
         <lable className="term">
-          <input typr="checkbox" /> I agree to Terms & Conditions
+          <input type="checkbox" /> I agree to Terms & Conditions
         </lable>
         <Button text='Signup'/>
          <div className="social-signup">
           <p>Or Sign Up With</p>
-          <div className="social-buttons">
-            <button className="google">Google</button>
-            <button className="github">GitHub</button>
-            <button className="linkedin">LinkedIn</button>
-          </div>
+          <SocialButton />
         </div>
         <p className="redirect">
           Already have an account? <a href="/login">Login</a>

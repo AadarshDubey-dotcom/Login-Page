@@ -1,5 +1,5 @@
 .my-button {
-  background: #F3E3D0;
+  background: #81A6C6;
   color: #ffffff;
   padding: 12px 24px;
   border: none;
@@ -13,10 +13,16 @@
 }
 
 .my-button:hover {
-  background: linear-gradient(135deg, #1e40af, #2563eb);
+  background: linear-gradient(135deg, #2563EB, #1E40AF);
   transform: translateY(-2px); 
 }
 
 .my-button:active {
   transform: scale(0.95);
+}
+
+.my-button:hover {
+  background: linear-gradient(135deg, #06B6D4, #38BDF8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }

@@ -1,6 +1,7 @@
 import {React,useState} from 'react'
 import "./Login.css"
 import Button from '../Component/Button'
+import SocialButton from '../Component/SocialButton';
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -10,7 +11,7 @@ function Login() {
       <div className="Container">
         <div className="Login-page">
             <div className="Form">
-              <h2>Glad to see you again</h2>
+              <h2>Login</h2>
               <div className="Input-field">
                 <input 
                 type="text"
@@ -28,14 +29,14 @@ function Login() {
                 />
                 <label >
                   <input type="checkbox"/> Remember me
-                </label>  
+                </label> 
+                <div className="flex flex-col items-center justify-center">
+                <Button text="Login" />
+                </div> 
                 <a href="#">Forgot your password?</a>
                 <p>--- Or Login With ---</p>
-                <button className="google-btn">Login with google</button>
-                <button className="Github-btn">Login with Github</button>
-                <button className="Linkdin-btn">Login with Linkdin</button>
+                <SocialButton />
 
-                <Button text="Login" />
                 <p>Don't have an account? <a href="#">Sign up</a></p>
               </div>
             </div>

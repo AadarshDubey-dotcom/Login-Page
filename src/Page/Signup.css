@@ -1,0 +1,103 @@
+.signup-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #81A6C6;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+    padding: 20px;
+}
+
+.Signup-Form {
+  flex: 1;
+  max-width: 520px;
+  background-color: #AACDDC;
+  border-radius: 15px;
+  padding: 40px 30px 20px;
+  text-align: left;
+}
+
+.Signup-Form h2{
+    font-size: 24px;
+    font-size: Arial, Helvetica, sans-serif;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    background: #F3E3D0;
+    color: #fff;
+}
+
+.input-field input::placeholder {
+    color: #9CA3AF;
+}
+.term {
+    font-size: 16px;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #111827;
+}
+
+.social-Signup{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-Signup p {
+    color: #9CA3AF;
+    margin-bottom: 10px;
+}
+
+.redirect{
+    text-align: center;
+    margin-top: 10px;
+    color: #111827;
+}
+.redirect a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.redirect a:hover{
+    text-decoration: underline;
+}
+
+.IMG {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.IMG img {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    object-fit: contain;
+}

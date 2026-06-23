@@ -10,28 +10,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+    padding: 20px;
 }
 .Form{
     flex: 1;
+    max-width: 520px;
     text-align: left;
     background-color: #AACDDC;
-    margin-left: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 40px 30px 20px;
 }
 
 .Form h2 {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #D2C4B4;
+    color: #111827;
     text-align: center;
-    margin-top: 8px;
+    padding-top: -30px;
 }
 
 .Input-field input {
     width: 100%;
-    padding: 12px;
+    padding: 16px;
     margin: 8px 0;
-    border-radius: 10px;
+    border-radius: 20px;
     border-style: none;
     outline: none;
     background: #F3E3D0;
@@ -39,7 +44,8 @@
 }
 
 .Input-field input::placeholder {
-    color: #D2C4B4;
+    color: #9CA3AF;
+    width: 100%;
 }
 
 .password-wrapper {
@@ -58,7 +64,7 @@
 .Input-field a {
     display: block;
     margin: 10px 0;
-    color: #D2C4B4;
+    color: #2563eb;
     text-decoration: none;
     text-align: center;
 }
@@ -74,15 +80,40 @@
     margin: 15px 0;
 }
 
-.google-btn {  color: #000000; }
-.github-btn { background: #000; color: #fff; }
-.linkedin-btn { background: #0077b5; color: #fff; }
-
 p {
     text-align: center;
+    color: #111827;
 }
 
 .IMG {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     text-align: right;
+}
+.IMG img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    object-fit: contain;
+}
+label {
+  font-size: 16px;
+  color: #111827;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #111827;
+
+}  
+
+.underline{
+    color: #9CA3AF;
 }
