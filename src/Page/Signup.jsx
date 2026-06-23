@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Button from '../Component/Button'
 import SocialButton from '@/Component/SocialButton'
 import './Signup.css'
@@ -40,7 +41,7 @@ function Signup() {
           <SocialButton />
         </div>
         <p className="redirect">
-          Already have an account? <a href="/login">Login</a>
+          Already have an account? <Link to="/login">Login</Link>
         </p>
        </form>
        <div className="IMG">
