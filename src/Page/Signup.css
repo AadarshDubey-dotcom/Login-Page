@@ -152,7 +152,6 @@ button:hover {
         text-align: center;
     }
     .IMG img {
-        width: 200px;
-        margin-top: 20px;
+         display: none;
     }
 }
