@@ -1,12 +1,13 @@
-.Container{
+.Container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #81A6C6;
+    font-family: 'Poppins', sans-serif;
 }
 
-.Login-page{
+.Login-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,37 +16,37 @@
     gap: 40px;
     padding: 20px;
 }
-.Form{
+
+.Form {
     flex: 1;
     max-width: 520px;
     text-align: left;
     background-color: #AACDDC;
     border-radius: 15px;
-    padding: 40px 30px 20px;
+    padding: 30px 20px;
 }
 
 .Form h2 {
-    font-size: 24px;
+    font-size: clamp(20px, 2.5vw, 28px);
     font-family: Arial, Helvetica, sans-serif;
     color: #111827;
     text-align: center;
-    padding-top: -30px;
+    margin-bottom: 20px;
 }
 
 .Input-field input {
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     margin: 8px 0;
     border-radius: 20px;
-    border-style: none;
+    border: none;
     outline: none;
     background: #F3E3D0;
-    color: #fff;
+    color: #111827;
 }
 
 .Input-field input::placeholder {
     color: #9CA3AF;
-    width: 100%;
 }
 
 .password-wrapper {
@@ -73,11 +74,11 @@
     text-decoration: underline;
 }
 
-
 .social-button {
     display: flex;
     gap: 10px;
     margin: 15px 0;
+    justify-content: center;
 }
 
 p {
@@ -88,32 +89,58 @@ p {
 .IMG {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     text-align: right;
 }
+
 .IMG img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: inline-block;
     object-fit: contain;
 }
+
 label {
-  font-size: 16px;
-  color: #111827;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    font-size: 16px;
+    color: #111827;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #111827;
+    width: 18px;
+    height: 18px;
+    accent-color: #111827;
+}
 
-}  
-
-.underline{
+.underline {
     color: #9CA3AF;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .Login-page {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .Form {
+        max-width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .Input-field input {
+        padding: 12px;
+    }
+    .social-button {
+        flex-direction: column;
+        gap: 12px;
+        width: auto;
+    }
+    .IMG {
+        display: none; /* 👈 Image section hide */
+    }
 }
